@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="#" />
+        <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="src/assets/script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="error"></div> 
+            <form method="post" action="index.php" class="container mt-2" id="jobForm">
+                <div class="mb-1">
+                    <label for="job_title" class="form-label">Job Title:</label>
+                    <input type="text" id="job_title" name="job_title" class="form-control"  maxlength="50" />
+                </div>
+                <div class="mb-1">
+                    <label for="job_description" class="form-label">Job Description:</label>
+                    <textarea id="job_description" name="job_description" class="form-control"></textarea>
+                </div>
+                <div class="mb-1">
+                    <label for="job_est_hours" class="form-label">Job EstHours:</label>
+                    <input type="number" id="job_est_hours" name="job_est_hours" class="form-control" />
+                </div>
+                <div class="mb-1">
+                    <label for="entry_date" class="form-label">Entry Date:</label>
+                    <input type="datetime-local" id="entry_date" name="entry_date" class="form-control"  />
+                </div>
+                <div class="mb-1">
+                    <label for="schedule_start_date" class="form-label">Schedule Start Date:</label>
+                    <input type="datetime-local" id="schedule_start_date" name="schedule_start_date" class="form-control" />
+                </div>
+                <div class="mb-1">
+                    <label for="schedule_end_date" class="form-label">Schedule End Date:</label>
+                    <input type="datetime-local" id="schedule_end_date" name="schedule_end_date" class="form-control" />
+                </div>
+                <div class="mb-1">
+                    <button id="submit_button" type="submit" class="btn btn-primary">Add Job</button>
+                </div>
+            </form>
+            <div id="response"></div>
+        </div>            
+    </body>
+</html>
+
+
+
+
+
+
+
