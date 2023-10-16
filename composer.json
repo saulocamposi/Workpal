@@ -1,0 +1,18 @@
+{
+    "name": "pedrogreggorio/raw_project",
+    "require": {
+        "phpunit/phpunit": "^10.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "MyApp\\": "src/",
+            "MyApp\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "saulo",
+            "email": "saulocamposi@gmail.com"
+        }
+    ]
+}
